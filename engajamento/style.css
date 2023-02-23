@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(assets/backgroundimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    overflow-x: hidden;
+
+}
+
+header {
+    width: 100vw;
+    height: auto;
+    top: 5vh;
+    background-color: #ffffff;
+    position: relative;
+    padding-bottom: 0.8rem;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #023682;
+    opacity: 0.7;
+
+}
+
+header .imagewest img {
+    display: block;
+    width: 100px;
+    height: auto;
+    margin: auto;
+
+}
+
+header .headertext h1 {
+    color: #004aad;
+    text-align: center;
+    font-weight: bolder;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header .headertext p {
+    text-align: center;
+    color: #004aad;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+main .buttons a {
+    text-decoration: none;
+
+}
+
+.marg {
+    display: block;
+    margin-bottom: 4rem;
+}
+
+
+main .buttons button {
+    display: block;
+    width: 45vw;
+    height: 6vh;
+    margin: auto;
+    position: relative;
+    border: none;
+    border-radius: 10em;
+    margin-top: 4.3em;
+    color: #004aad;
+    font-size: 150%;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+main .buttons button img {
+    position: absolute;
+    max-width: 100%;
+    width: 150px;
+    height: 150px;
+    left: -40px;
+    top: -52px;
+}
+
+.footerinfo {
+    width: 100vw;
+    position: relative;
+    padding: 2rem;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    font-size: 0.85rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #004aad;
+    font-weight: bolder;
+
+}
+
+.footerinfo p {
+    display: block;
+    text-align: justify;
+
+
+}
+
+
+
+@media (max-width: 920px) {
+
+    main .buttons button {
+        width: 80vw;
+        font-size: 1.2rem;
+
+    }
+
+    main .buttons button img {
+
+        width: 100px;
+        height: 100px;
+        left: -30px;
+        top: -25px;
+    }
+
+    .footerinfo {
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 920px) {
+
+
+    .footerinfo {
+        position: absolute;
+    }
+}
